@@ -1,0 +1,35 @@
+@page "/media"
+@rendermode InteractiveServer
+
+<PageTitle>Calculadora de Média</PageTitle>
+<h1>Calculadora de Média do Aluno</h1>
+<label for="nota1">Primeira nota</label>
+<input id="nota1" type="number" step="any" @bind="nota1" />
+<label for="nota2">Segunda nota</label>
+<input id="nota2" type="number" step="any" @bind="nota2" />
+<button type="button" @onclick="CalcularMedia">Calcular Média</button>
+<div aria-live="polite">
+    @if (media.HasValue)
+    {
+        <p class="resultado">Média: @media.Value</p>
+        @if (media.Value >= 7.0)
+        {
+            <p style="color: green;">Aprovado!</p>
+        }
+        else
+        {
+            <p style="color: red;">Reprovado!</p>
+        }
+    }
+</div>
+
+@code {
+    private double nota1;
+    private double nota2;
+    private double? media = null;
+
+    private void CalcularMedia()
+    {
+        media = (nota1 + nota2) / 2.0;
+    }
+}
