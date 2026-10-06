@@ -4,7 +4,7 @@ Atividade de Desenvolvimento Web — Usabilidade, Dev. Web, Mobile e Jogos.
 Professor: Daniel Henrique Matos de Paiva.
 
 ## Equipe (até 5 alunos)
-
+Victor Rodrigues da Silva
 Nicolas Ribeiro Rocha
 
 ## Requisitos
