@@ -5,6 +5,7 @@ Professor: Daniel Henrique Matos de Paiva.
 
 ## Equipe (até 5 alunos)
 Victor Rodrigues da Silva
+
 Nicolas Ribeiro Rocha
 
 ## Requisitos
